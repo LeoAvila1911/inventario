@@ -664,14 +664,91 @@ class ControladorVentas{
 
 			}
 
-
 			echo "</table>";
 
 		}
 
 	}
 
+	public function ctrDescargarReporteZenodo()
+	{
 
+		$tabla = "ventas";
+
+		if (isset($_GET["fechaInicial"]) && isset($_GET["fechaFinal"])) {
+			$ventas = ModeloVentas::mdlRangoFechasVentas($tabla, $_GET["fechaInicial"], $_GET["fechaFinal"]);
+		} else {
+			$item = null;
+			$valor = null;
+			$ventas = ModeloVentas::mdlMostrarVentas($tabla, $item, $valor);
+		}
+
+		$contenidoTabla = "<table border='0'> 
+				<tr> 
+					<td style='font-weight:bold; border:1px solid #eee;'>CÓDIGO</td> 
+					<td style='font-weight:bold; border:1px solid #eee;'>CLIENTE</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>VENDEDOR</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>CANTIDAD</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>PRODUCTOS</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>IMPUESTO</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>NETO</td>       
+					<td style='font-weight:bold; border:1px solid #eee;'>TOTAL</td>       
+					<td style='font-weight:bold; border:1px solid #eee;'>METODO DE PAGO</td   
+					<td style='font-weight:bold; border:1px solid #eee;'>FECHA</td>        
+				</tr>";
+
+		foreach ($ventas as $row => $item) {
+			$cliente = ControladorClientes::ctrMostrarClientes("id", $item["id_cliente"]);
+			$vendedor = ControladorUsuarios::ctrMostrarUsuarios("id", $item["id_vendedor"]);
+
+			$contenidoTabla .= "<tr>
+					<td style='border:1px solid #eee;'>" . $item["codigo"] . "</td> 
+					<td style='border:1px solid #eee;'>" . $cliente["nombre"] . "</td>
+					<td style='border:1px solid #eee;'>" . $vendedor["nombre"] . "</td>
+					<td style='border:1px solid #eee;'>";
+
+			$productos = json_decode($item["productos"], true);
+
+			foreach ($productos as $key => $valueProductos) {
+				$contenidoTabla .= $valueProductos["cantidad"] . "<br>";
+			}
+
+			$contenidoTabla .= "</td><td style='border:1px solid #eee;'>";
+
+			foreach ($productos as $key => $valueProductos) {
+				$contenidoTabla .= $valueProductos["descripcion"] . "<br>";
+			}
+
+			$contenidoTabla .= "</td>
+					<td style='border:1px solid #eee;'>$ " . number_format($item["impuesto"], 2) . "</td>
+					<td style='border:1px solid #eee;'>$ " . number_format($item["neto"], 2) . "</td>   
+					<td style='border:1px solid #eee;'>$ " . number_format($item["total"], 2) . "</td>
+					<td style='border:1px solid #eee;'>" . $item["metodo_pago"] . "</td>
+					<td style='border:1px solid #eee;'>" . substr($item["fecha"], 0, 10) . "</td>        
+					</tr>";
+		}
+
+		$contenidoTabla .= "</table>";
+
+		date_default_timezone_set('America/Guayaquil');
+		$fechaHora = date('Y-m-d_H-i-s');
+
+		// Se establece la ruta destino
+		$rutaDestino = "../../descargas/ventas $fechaHora.xls";
+
+		// Verificar si la carpeta "descargas" no existe
+		if (!is_dir(dirname($rutaDestino))) {
+			// Crear la carpeta "descargas" si no existe
+			mkdir(dirname($rutaDestino), 0755, true);
+		}
+
+		// Guardar el contenido de la tabla en el archivo de destino
+		file_put_contents($rutaDestino, $contenidoTabla);
+
+		return $fechaHora . ".xls";
+	}
+	
+	
 	/*=============================================
 	SUMA TOTAL VENTAS
 	=============================================*/

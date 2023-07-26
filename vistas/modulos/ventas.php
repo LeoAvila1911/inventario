@@ -59,6 +59,26 @@ if($xml){
 
         </a>
 
+        <a href="vistas/modulos/descargar-reporte.php?opcion=ventas">
+        
+          <button class="btn btn-primary">
+            
+            Exportar a Zenodo
+
+          </button>
+
+        </a>
+
+        <a href="vistas/modulos/descargar-reporte.php?opcion=ventas">
+        
+          <button class="btn btn-primary">
+            
+            Exportar a GitHub
+
+          </button>
+
+        </a>
+
          <button type="button" class="btn btn-default pull-right" id="daterange-btn">
            
             <span>
@@ -204,6 +224,23 @@ if($xml){
 
 </div>
 
+<script>
+	// Obtener el parámetro de la URL
+	const urlParams = new URLSearchParams(window.location.search);
+	const zenodo = urlParams.get('zenodo');
 
-
-
+	// Verificar si hay una alerta y mostrarla
+	if (zenodo === 'success') {
+		swal({
+			type: "success",
+			title: "El archivo se exportó correctamente",
+			showConfirmButton: true,
+			confirmButtonText: "Cerrar",
+			closeOnConfirm: false
+		}).then(function(result) {
+			if (result.value) {
+				window.location = "ventas";
+			}
+		});
+	}
+</script>

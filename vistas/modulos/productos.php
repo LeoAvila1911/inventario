@@ -45,6 +45,16 @@ if($_SESSION["perfil"] == "Vendedor"){
 
         </button>
 
+        <a href="vistas/modulos/descargar-reporte.php?opcion=productos">
+        
+          <button class="btn btn-primary">
+            
+            Exportar a Zenodo
+
+          </button>
+
+        </a>
+
       </div>
 
       <div class="box-body">
@@ -509,5 +519,23 @@ MODAL EDITAR PRODUCTO
 
 ?>      
 
+<script>
+	// Obtener el parámetro de la URL
+	const urlParams = new URLSearchParams(window.location.search);
+	const zenodo = urlParams.get('zenodo');
 
-
+	// Verificar si hay una alerta y mostrarla
+	if (zenodo === 'success') {
+		swal({
+			type: "success",
+			title: "El archivo se exportó correctamente",
+			showConfirmButton: true,
+			confirmButtonText: "Cerrar",
+			closeOnConfirm: false
+		}).then(function(result) {
+			if (result.value) {
+				window.location = "productos";
+			}
+		});
+	}
+</script>

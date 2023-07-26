@@ -1,0 +1,233 @@
+<table border='0'> 
+				<tr> 
+					<td style='font-weight:bold; border:1px solid #eee;'>CÓDIGO</td> 
+					<td style='font-weight:bold; border:1px solid #eee;'>CLIENTE</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>VENDEDOR</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>CANTIDAD</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>PRODUCTOS</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>IMPUESTO</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>NETO</td>       
+					<td style='font-weight:bold; border:1px solid #eee;'>TOTAL</td>       
+					<td style='font-weight:bold; border:1px solid #eee;'>METODO DE PAGO</td   
+					<td style='font-weight:bold; border:1px solid #eee;'>FECHA</td>        
+				</tr><tr>
+					<td style='border:1px solid #eee;'>10022</td> 
+					<td style='border:1px solid #eee;'>Ximena Restrepo</td>
+					<td style='border:1px solid #eee;'>Administrador</td>
+					<td style='border:1px solid #eee;'>3<br>1<br>1<br>1<br>1<br>1<br></td><td style='border:1px solid #eee;'>Cortadora de Baldosin<br>Cono slump<br>Coche llanta neumatica<br>Cizalla de Tijera<br>Polea 2 canales<br>Planta Electrica Diesel 120 Kva<br></td>
+					<td style='border:1px solid #eee;'>$ 364.56</td>
+					<td style='border:1px solid #eee;'>$ 12,152.00</td>   
+					<td style='border:1px solid #eee;'>$ 12,516.60</td>
+					<td style='border:1px solid #eee;'>Efectivo</td>
+					<td style='border:1px solid #eee;'>2023-07-04</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10021</td> 
+					<td style='border:1px solid #eee;'>Juan Villegas</td>
+					<td style='border:1px solid #eee;'>Administrador</td>
+					<td style='border:1px solid #eee;'>1<br>1<br></td><td style='border:1px solid #eee;'>Cortadora de Baldosin<br>Cono slump<br></td>
+					<td style='border:1px solid #eee;'>$ 149.80</td>
+					<td style='border:1px solid #eee;'>$ 1,498.00</td>   
+					<td style='border:1px solid #eee;'>$ 1,647.80</td>
+					<td style='border:1px solid #eee;'>Efectivo</td>
+					<td style='border:1px solid #eee;'>2018-02-06</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10020</td> 
+					<td style='border:1px solid #eee;'>Pedro Pérez</td>
+					<td style='border:1px solid #eee;'>Juan Fernando Urrego</td>
+					<td style='border:1px solid #eee;'>1<br>1<br></td><td style='border:1px solid #eee;'>Cilindro muestra de concreto<br>Chapeta<br></td>
+					<td style='border:1px solid #eee;'>$ 281.96</td>
+					<td style='border:1px solid #eee;'>$ 1,484.00</td>   
+					<td style='border:1px solid #eee;'>$ 1,765.96</td>
+					<td style='border:1px solid #eee;'>TC-46346346346</td>
+					<td style='border:1px solid #eee;'>2017-12-26</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10019</td> 
+					<td style='border:1px solid #eee;'>Miguel Murillo</td>
+					<td style='border:1px solid #eee;'>Juan Fernando Urrego</td>
+					<td style='border:1px solid #eee;'>15<br>1<br></td><td style='border:1px solid #eee;'>Cizalla de Palanca<br>Cilindro muestra de concreto<br></td>
+					<td style='border:1px solid #eee;'>$ 1,901.90</td>
+					<td style='border:1px solid #eee;'>$ 10,010.00</td>   
+					<td style='border:1px solid #eee;'>$ 11,911.90</td>
+					<td style='border:1px solid #eee;'>Efectivo</td>
+					<td style='border:1px solid #eee;'>2017-12-26</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10018</td> 
+					<td style='border:1px solid #eee;'>Margarita Londoño</td>
+					<td style='border:1px solid #eee;'>Juan Fernando Urrego</td>
+					<td style='border:1px solid #eee;'>1<br>5<br>1<br></td><td style='border:1px solid #eee;'>Tensor<br>Bascula <br>Bomba Hidrostatica<br></td>
+					<td style='border:1px solid #eee;'>$ 404.32</td>
+					<td style='border:1px solid #eee;'>$ 2,128.00</td>   
+					<td style='border:1px solid #eee;'>$ 2,532.32</td>
+					<td style='border:1px solid #eee;'>Efectivo</td>
+					<td style='border:1px solid #eee;'>2017-12-26</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10017</td> 
+					<td style='border:1px solid #eee;'>Julian Ramirez</td>
+					<td style='border:1px solid #eee;'>Juan Fernando Urrego</td>
+					<td style='border:1px solid #eee;'>4<br>3<br>2<br>1<br></td><td style='border:1px solid #eee;'>Cizalla de Tijera<br>Bascula <br>Cilindro muestra de concreto<br>Cizalla de Palanca<br></td>
+					<td style='border:1px solid #eee;'>$ 1,053.36</td>
+					<td style='border:1px solid #eee;'>$ 5,544.00</td>   
+					<td style='border:1px solid #eee;'>$ 6,597.36</td>
+					<td style='border:1px solid #eee;'>Efectivo</td>
+					<td style='border:1px solid #eee;'>2017-12-26</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10016</td> 
+					<td style='border:1px solid #eee;'>Stella Jaramillo</td>
+					<td style='border:1px solid #eee;'>Juan Fernando Urrego</td>
+					<td style='border:1px solid #eee;'>1<br>5<br>1<br></td><td style='border:1px solid #eee;'>Coche llanta neumatica<br>Cizalla de Tijera<br>Cizalla de Palanca<br></td>
+					<td style='border:1px solid #eee;'>$ 1,002.82</td>
+					<td style='border:1px solid #eee;'>$ 5,278.00</td>   
+					<td style='border:1px solid #eee;'>$ 6,280.82</td>
+					<td style='border:1px solid #eee;'>TD-4523523523</td>
+					<td style='border:1px solid #eee;'>2017-12-26</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10015</td> 
+					<td style='border:1px solid #eee;'>Eduardo López</td>
+					<td style='border:1px solid #eee;'>Juan Fernando Urrego</td>
+					<td style='border:1px solid #eee;'>3<br></td><td style='border:1px solid #eee;'>Cizalla de Tijera<br></td>
+					<td style='border:1px solid #eee;'>$ 462.84</td>
+					<td style='border:1px solid #eee;'>$ 2,436.00</td>   
+					<td style='border:1px solid #eee;'>$ 2,898.84</td>
+					<td style='border:1px solid #eee;'>Efectivo</td>
+					<td style='border:1px solid #eee;'>2017-12-26</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10014</td> 
+					<td style='border:1px solid #eee;'>Ximena Restrepo</td>
+					<td style='border:1px solid #eee;'>Juan Fernando Urrego</td>
+					<td style='border:1px solid #eee;'>1<br>1<br>10<br></td><td style='border:1px solid #eee;'>Cono slump<br>Chapeta<br>Bomba Hidrostatica<br></td>
+					<td style='border:1px solid #eee;'>$ 2,261.00</td>
+					<td style='border:1px solid #eee;'>$ 11,900.00</td>   
+					<td style='border:1px solid #eee;'>$ 14,161.00</td>
+					<td style='border:1px solid #eee;'>Efectivo</td>
+					<td style='border:1px solid #eee;'>2017-12-26</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10013</td> 
+					<td style='border:1px solid #eee;'>David Guzman</td>
+					<td style='border:1px solid #eee;'>Juan Fernando Urrego</td>
+					<td style='border:1px solid #eee;'>1<br>1<br>5<br></td><td style='border:1px solid #eee;'>Chapeta<br>Cono slump<br>Cortadora de Baldosin<br></td>
+					<td style='border:1px solid #eee;'>$ 1,449.70</td>
+					<td style='border:1px solid #eee;'>$ 7,630.00</td>   
+					<td style='border:1px solid #eee;'>$ 9,079.70</td>
+					<td style='border:1px solid #eee;'>TC-425235235235</td>
+					<td style='border:1px solid #eee;'>2017-12-26</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10012</td> 
+					<td style='border:1px solid #eee;'>Gonzalo Pérez</td>
+					<td style='border:1px solid #eee;'>Juan Fernando Urrego</td>
+					<td style='border:1px solid #eee;'>1<br>1<br>1<br>1<br></td><td style='border:1px solid #eee;'>Cono slump<br>Coche llanta neumatica<br>Chapeta<br>Bomba Hidrostatica<br></td>
+					<td style='border:1px solid #eee;'>$ 529.34</td>
+					<td style='border:1px solid #eee;'>$ 2,786.00</td>   
+					<td style='border:1px solid #eee;'>$ 3,315.34</td>
+					<td style='border:1px solid #eee;'>TC-3545235235</td>
+					<td style='border:1px solid #eee;'>2017-12-25</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10011</td> 
+					<td style='border:1px solid #eee;'>Julian Ramirez</td>
+					<td style='border:1px solid #eee;'>Administrador</td>
+					<td style='border:1px solid #eee;'>1<br>1<br>1<br>1<br></td><td style='border:1px solid #eee;'>Cortadora de Baldosin<br>Cono slump<br>Coche llanta neumatica<br>Cizalla de Tijera<br></td>
+					<td style='border:1px solid #eee;'>$ 550.62</td>
+					<td style='border:1px solid #eee;'>$ 2,898.00</td>   
+					<td style='border:1px solid #eee;'>$ 3,448.62</td>
+					<td style='border:1px solid #eee;'>Efectivo</td>
+					<td style='border:1px solid #eee;'>2017-12-25</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10010</td> 
+					<td style='border:1px solid #eee;'>Stella Jaramillo</td>
+					<td style='border:1px solid #eee;'>Administrador</td>
+					<td style='border:1px solid #eee;'>1<br>1<br></td><td style='border:1px solid #eee;'>Hidrolavadora Eléctrica <br>Hidrolavadora Gasolina<br></td>
+					<td style='border:1px solid #eee;'>$ 1,279.46</td>
+					<td style='border:1px solid #eee;'>$ 6,734.00</td>   
+					<td style='border:1px solid #eee;'>$ 8,013.46</td>
+					<td style='border:1px solid #eee;'>Efectivo</td>
+					<td style='border:1px solid #eee;'>2017-12-07</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10009</td> 
+					<td style='border:1px solid #eee;'>David Guzman</td>
+					<td style='border:1px solid #eee;'>Administrador</td>
+					<td style='border:1px solid #eee;'>1<br>1<br>1<br></td><td style='border:1px solid #eee;'>Hidrolavadora Gasolina<br>Hidrolavadora Eléctrica <br>Disco Punta Diamante <br></td>
+					<td style='border:1px solid #eee;'>$ 1,572.06</td>
+					<td style='border:1px solid #eee;'>$ 8,274.00</td>   
+					<td style='border:1px solid #eee;'>$ 9,846.06</td>
+					<td style='border:1px solid #eee;'>TD-5745745745</td>
+					<td style='border:1px solid #eee;'>2017-08-15</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10008</td> 
+					<td style='border:1px solid #eee;'>Gonzalo Pérez</td>
+					<td style='border:1px solid #eee;'>Administrador</td>
+					<td style='border:1px solid #eee;'>1<br>5<br>1<br>1<br></td><td style='border:1px solid #eee;'>Plato Flotante para Allanadora<br>Extractor de Aire <br>Disco Punta Diamante <br>Hidrolavadora Eléctrica <br></td>
+					<td style='border:1px solid #eee;'>$ 4,229.40</td>
+					<td style='border:1px solid #eee;'>$ 22,260.00</td>   
+					<td style='border:1px solid #eee;'>$ 26,489.40</td>
+					<td style='border:1px solid #eee;'>TD-35745575</td>
+					<td style='border:1px solid #eee;'>2017-12-25</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10007</td> 
+					<td style='border:1px solid #eee;'>Eduardo López</td>
+					<td style='border:1px solid #eee;'>Administrador</td>
+					<td style='border:1px solid #eee;'>1<br>1<br>6<br>1<br></td><td style='border:1px solid #eee;'>Disco Punta Diamante <br>Extractor de Aire <br>Guadañadora <br>Hidrolavadora Eléctrica <br></td>
+					<td style='border:1px solid #eee;'>$ 3,851.68</td>
+					<td style='border:1px solid #eee;'>$ 20,272.00</td>   
+					<td style='border:1px solid #eee;'>$ 24,123.70</td>
+					<td style='border:1px solid #eee;'>TC-357547467346</td>
+					<td style='border:1px solid #eee;'>2017-11-30</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10006</td> 
+					<td style='border:1px solid #eee;'>Ximena Restrepo</td>
+					<td style='border:1px solid #eee;'>Administrador</td>
+					<td style='border:1px solid #eee;'>1<br>1<br>3<br>1<br></td><td style='border:1px solid #eee;'>Compresor de Aire para pintura<br>Cortadora de Adobe sin Disco <br>Cortadora de Piso sin Disco <br>Disco Punta Diamante <br></td>
+					<td style='border:1px solid #eee;'>$ 3,383.52</td>
+					<td style='border:1px solid #eee;'>$ 17,808.00</td>   
+					<td style='border:1px solid #eee;'>$ 21,191.50</td>
+					<td style='border:1px solid #eee;'>Efectivo</td>
+					<td style='border:1px solid #eee;'>2018-01-26</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10005</td> 
+					<td style='border:1px solid #eee;'>Margarita Londoño</td>
+					<td style='border:1px solid #eee;'>Juan Fernando Urrego</td>
+					<td style='border:1px solid #eee;'>1<br>1<br>5<br></td><td style='border:1px solid #eee;'>Cortadora de Adobe sin Disco <br>Cortadora de Piso sin Disco <br>Compresor de Aire para pintura<br></td>
+					<td style='border:1px solid #eee;'>$ 5,463.64</td>
+					<td style='border:1px solid #eee;'>$ 28,756.00</td>   
+					<td style='border:1px solid #eee;'>$ 34,219.60</td>
+					<td style='border:1px solid #eee;'>TC-6756856867</td>
+					<td style='border:1px solid #eee;'>2018-01-09</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10004</td> 
+					<td style='border:1px solid #eee;'>Miguel Murillo</td>
+					<td style='border:1px solid #eee;'>Ana Gonzalez</td>
+					<td style='border:1px solid #eee;'>5<br>1<br>1<br></td><td style='border:1px solid #eee;'>Compresor de Aire para pintura<br>Cortadora de Adobe sin Disco <br>Cortadora de Piso sin Disco <br></td>
+					<td style='border:1px solid #eee;'>$ 5,463.64</td>
+					<td style='border:1px solid #eee;'>$ 28,756.00</td>   
+					<td style='border:1px solid #eee;'>$ 34,219.60</td>
+					<td style='border:1px solid #eee;'>TD-454475467567</td>
+					<td style='border:1px solid #eee;'>2018-01-25</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10003</td> 
+					<td style='border:1px solid #eee;'>Miguel Murillo</td>
+					<td style='border:1px solid #eee;'>Ana Gonzalez</td>
+					<td style='border:1px solid #eee;'>1<br>1<br>1<br></td><td style='border:1px solid #eee;'>Guadañadora <br>Hidrolavadora Eléctrica <br>Extractor de Aire <br></td>
+					<td style='border:1px solid #eee;'>$ 1,510.88</td>
+					<td style='border:1px solid #eee;'>$ 7,952.00</td>   
+					<td style='border:1px solid #eee;'>$ 9,462.88</td>
+					<td style='border:1px solid #eee;'>Efectivo</td>
+					<td style='border:1px solid #eee;'>2018-01-18</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10002</td> 
+					<td style='border:1px solid #eee;'>Pedro Pérez</td>
+					<td style='border:1px solid #eee;'>Ana Gonzalez</td>
+					<td style='border:1px solid #eee;'>2<br>1<br>1<br>1<br></td><td style='border:1px solid #eee;'>Cortadora de Piso sin Disco <br>Cortadora de Adobe sin Disco <br>Disco Punta Diamante <br>Extractor de Aire <br></td>
+					<td style='border:1px solid #eee;'>$ 2,585.52</td>
+					<td style='border:1px solid #eee;'>$ 13,608.00</td>   
+					<td style='border:1px solid #eee;'>$ 16,193.50</td>
+					<td style='border:1px solid #eee;'>TC-34346346346</td>
+					<td style='border:1px solid #eee;'>2018-02-02</td>        
+					</tr><tr>
+					<td style='border:1px solid #eee;'>10001</td> 
+					<td style='border:1px solid #eee;'>Juan Villegas</td>
+					<td style='border:1px solid #eee;'>Administrador</td>
+					<td style='border:1px solid #eee;'>2<br>2<br>1<br></td><td style='border:1px solid #eee;'>Aspiradora Industrial <br>Plato Flotante para Allanadora<br>Compresor de Aire para pintura<br></td>
+					<td style='border:1px solid #eee;'>$ 3,648.00</td>
+					<td style='border:1px solid #eee;'>$ 19,200.00</td>   
+					<td style='border:1px solid #eee;'>$ 22,848.00</td>
+					<td style='border:1px solid #eee;'>Efectivo</td>
+					<td style='border:1px solid #eee;'>2018-02-01</td>        
+					</tr></table>

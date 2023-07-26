@@ -360,5 +360,58 @@ class ControladorProductos{
 
 	}
 
+	public function ctrDescargarReporteZenodo()
+	{
+		$tabla = "productos";
 
+		$item = null;
+		$valor = null;
+		$orden = "id";
+
+		$productos = ModeloProductos::mdlMostrarProductos($tabla, $item, $valor, $orden);
+
+		$contenidoTabla = "<table border='0'> 
+				<tr> 
+					<td style='font-weight:bold; border:1px solid #eee;'>CÓDIGO</td> 
+					<td style='font-weight:bold; border:1px solid #eee;'>DESCRIPCIÓN</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>CATEGORÍA</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>STOCK</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>PRECIO DE COMPRA</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>PRECIO DE VENTA</td>
+					<td style='font-weight:bold; border:1px solid #eee;'>AGREGADO</td>       
+				</tr>";
+
+		foreach ($productos as $row => $item) {
+			$categoria = ControladorCategorias::ctrMostrarCategorias("id", $item["id_categoria"]);
+
+			$contenidoTabla .= "<tr>
+					<td style='border:1px solid #eee;'>" . $item["codigo"] . "</td> 
+					<td style='border:1px solid #eee;'>" . $item["descripcion"] . "</td>
+					<td style='border:1px solid #eee;'>" . $categoria["categoria"] . "</td>
+					<td style='border:1px solid #eee;'>" . $item["stock"] . "</td>
+					<td style='border:1px solid #eee;'>" . $item["precio_compra"] . "</td>
+					<td style='border:1px solid #eee;'>" . $item["precio_venta"] . "</td>
+					<td style='border:1px solid #eee;'>" . $item["fecha"] . "</td>
+					<td style='border:1px solid #eee;'>";
+		}
+
+		$contenidoTabla .= "</table>";
+
+		date_default_timezone_set('America/Guayaquil');
+		$fechaHora = date('Y-m-d_H-i-s');
+
+		// Se establece la ruta destino
+		$rutaDestino = "../../descargas/productos $fechaHora.xls";
+
+		// Verificar si la carpeta "descargas" no existe
+		if (!is_dir(dirname($rutaDestino))) {
+			// Crear la carpeta "descargas" si no existe
+			mkdir(dirname($rutaDestino), 0755, true);
+		}
+
+		// Guardar el contenido de la tabla en el archivo de destino
+		file_put_contents($rutaDestino, $contenidoTabla);
+
+		return $fechaHora . ".xls";
+	}
 }
